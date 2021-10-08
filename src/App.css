@@ -153,6 +153,7 @@
   background-image: url('../src/images/projectsBG.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projectsContentContainer {

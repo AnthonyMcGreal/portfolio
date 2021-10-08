@@ -1,4 +1,4 @@
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, useTransition } from 'react-spring';
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import { nc_news_fe, nc_news_be, waypoint, hangman } from '../projects';
 
@@ -35,6 +35,7 @@ const Projects = () => {
         config:{ tension: 30,
             friction: 5}
     })
+
     return (
         <AbsoluteWrapper>
             <div className="projectsContainer">
