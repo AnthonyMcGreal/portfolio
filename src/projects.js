@@ -5,7 +5,7 @@ import hangmanThumb from '../src/images/hangmanThumb.png';
 
 const nc_news_fe = {
   title: 'NC News Frontend Project',
-  description: 'A small reddit style news website',
+  shortDescription: 'A small reddit style news website',
   github: 'https://github.com/AnthonyMcGreal/nc-news-frontend_project',
   site: 'https://loving-jackson-9ef6b2.netlify.app/',
   thumbnail: nc_news_feThumb,
@@ -13,7 +13,7 @@ const nc_news_fe = {
 
 const nc_news_be = {
   title: 'NC News Backend Project',
-  description: 'Backend set-up for NC news Project',
+  shortDescription: 'Backend set-up for NC news Project',
   github: 'https://github.com/AnthonyMcGreal/Backend-Project-NC-News',
   site: 'https://news-app-anthony-mcgreal.herokuapp.com/api',
   thumbnail: nc_news_beThumb,
@@ -21,7 +21,8 @@ const nc_news_be = {
 
 const waypoint = {
   title: 'Waypoint',
-  description: 'A social tour app to share walks, pictures and descriptions',
+  shortDescription:
+    'A social tour app to share walks, pictures and descriptions',
   github: 'https://github.com/thick-hollins/waypoint-fe ',
   github2: 'https://github.com/cjpearson85/waypoint-be',
   video: 'https://www.youtube.com/watch?v=rmPnrpoBBiA',
@@ -30,7 +31,7 @@ const waypoint = {
 
 const hangman = {
   title: 'Hangman',
-  description: 'The classic Hangman game',
+  shortDescription: 'The classic Hangman game',
   github: 'https://github.com/AnthonyMcGreal/Hangman',
   site: 'https://determined-wozniak-87616d.netlify.app/',
   thumbnail: hangmanThumb,

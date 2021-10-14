@@ -1,8 +1,9 @@
-import { useSpring, animated, useTransition } from 'react-spring';
+import { useSpring, animated} from 'react-spring';
+import { useHistory } from 'react-router-dom';
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import { nc_news_fe, nc_news_be, waypoint, hangman } from '../projects';
 
-const Projects = () => {
+const Projects = ({project, setProject}) => {
 
     const enterLeft = useSpring({
         from: { opacity: 0, transform: 'translate(-100vw, 0)' },
@@ -36,36 +37,48 @@ const Projects = () => {
             friction: 5}
     })
 
+    const history = useHistory()
+
+    const handleClick = (passedProject) => {
+        setProject(passedProject)
+        history.push('/viewProject')
+
+    }
+    console.log(project)
     return (
         <AbsoluteWrapper>
             <div className="projectsContainer">
                 <div className="projectsContentContainer">
-               <animated.div style={enterLeft} className="projectBox">
+               <animated.div style={enterLeft} className="projectBox" >
                    <div className="projectContent">
                    <h1>{nc_news_fe.title}</h1>
                    <img src={nc_news_fe.thumbnail} alt="nc news frontend homepage"/>
-                   <p>{nc_news_fe.description}</p>
+                   <p>{nc_news_fe.shortDescription}</p>
+                   <button onClick={() => handleClick(nc_news_fe)}>View Project</button>
                    </div>
                </animated.div>
                <animated.div style={enterBottom} className="projectBox">
                <div className="projectContent">
                <h1>{nc_news_be.title}</h1>
                    <img src={nc_news_be.thumbnail} alt="nc news backend homepage"/>
-                   <p>{nc_news_be.description}</p>
+                   <p>{nc_news_be.shortDescription}</p>
+                   <button onClick={() => handleClick(nc_news_be)}>View Project</button>
                </div>
                </animated.div>
                <animated.div style={enterBottom2} className="projectBox">
                <div className="projectContent">
                <h1>{waypoint.title}</h1>
                    <img src={waypoint.thumbnail} alt="waypoint homepage"/>
-                   <p>{waypoint.description}</p>
+                   <p>{waypoint.shortDescription}</p>
+                   <button onClick={() => handleClick(waypoint)}>View Project</button>
                </div>
                </animated.div>
                <animated.div style={enterRight} className="projectBox">
                <div className="projectContent">
                <h1>{hangman.title}</h1>
                    <img src={hangman.thumbnail} alt="hangman homepage"/>
-                   <p>{hangman.description}</p>
+                   <p>{hangman.shortDescription}</p>
+                   <button onClick={() => handleClick(hangman)}>View Project</button>
                </div>
                </animated.div>
 

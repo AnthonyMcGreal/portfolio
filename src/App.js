@@ -7,9 +7,12 @@ import About from './componants/About';
 import Contact from './componants/Contact';
 import Projects from './componants/Projects';
 import Footer from './componants/Footer';
+import { useState } from 'react';
+import ViewProject from './componants/ViewProject';
 
 function App() {
   const location = useLocation();
+  const [project, setProject] = useState({ test: 'hello' });
 
   const transitions = useTransition(location, {
     from: { opacity: 1, transform: 'translate(100%, 0)' },
@@ -17,6 +20,7 @@ function App() {
     leave: { opacity: 1, transform: 'translate(-100%, 0)' },
   });
 
+  console.log(project);
   return (
     <div className="pageContainer">
       <Header className="App-header"></Header>
@@ -27,7 +31,12 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/aboutMe" component={About} />
               <Route exact path="/contactMe" component={Contact} />
-              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/projects">
+                <Projects project={project} setProject={setProject} />
+              </Route>
+              <Route exact path="/viewProject">
+                <ViewProject component={ViewProject} project={project} />
+              </Route>
             </Switch>
           </animated.div>
         ))}
