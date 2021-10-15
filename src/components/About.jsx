@@ -1,5 +1,6 @@
 import { useSpring, animated } from 'react-spring';
 import AbsoluteWrapper from "./AbsoluteWrapper";
+import Footer from './Footer';
 
 const About = () => {
 
@@ -52,7 +53,7 @@ const About = () => {
                     </animated.div>
             </animated.div>
             </div>
-
+            <Footer />
         </AbsoluteWrapper>
     );
 };

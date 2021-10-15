@@ -40,7 +40,6 @@ function App() {
           </animated.div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

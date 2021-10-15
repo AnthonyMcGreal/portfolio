@@ -379,16 +379,20 @@ a.linkedInLink :active {
   .pageContainer {
     height: none;
     width: 100vw;
+    overflow-x: hidden;
   }
 
   .appContent {
     position: relative;
     top: 0px;
-    height: 600px;
   }
 
   .logo {
-    left: 10px;
+    display: block;
+    position: relative;
+    transform: none;
+    left: -10px;
+    top: -0px;
     font-size: 30px;
   }
 
@@ -403,7 +407,7 @@ a.linkedInLink :active {
   }
 
   .homeContainer {
-    height: 100%;
+    height: 600px;
   }
 
   .homeContentContainer {
@@ -419,10 +423,14 @@ a.linkedInLink :active {
     font-size: 60px;
   }
 
+  .aboutContainer {
+    height: 920px;
+  }
+
   .aboutContent {
     width: 90%;
     min-width: 0px;
-    overflow-y: scroll;
+    height: 900px;
   }
 
   .profilePicture {
@@ -435,5 +443,64 @@ a.linkedInLink :active {
     display: block;
     position: relative;
     width: 100vw;
+  }
+
+  .projectsContainer {
+    height: 800px;
+  }
+
+  .projectsContentContainer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .projectBox {
+    width: 250px;
+    min-width: 200px;
+    height: 180px;
+  }
+
+  .projectContent h1 {
+    font-size: 16px;
+  }
+
+  .projectContent img {
+    display: none;
+  }
+
+  .contactMeContainer {
+    position: relative;
+    height: 500px;
+  }
+
+  .contactMeContentBackGround {
+    width: 90%;
+    min-width: 0px;
+    height: 60%;
+  }
+
+  .details {
+    width: 90%;
+    grid-template-columns: 12% auto;
+  }
+
+  .viewProjectContainer {
+    height: fit-content;
+  }
+
+  .viewProjectContentContainer {
+    min-width: 0px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .viewProjectContent button {
+    position: relative;
+    margin: auto;
+    left: 0%;
+    transform: translateX(0%);
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 } ;

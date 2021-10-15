@@ -1,6 +1,7 @@
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import profilePic from "../images/profilePic.jpg"
 import { useSpring, animated } from 'react-spring';
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -53,6 +54,7 @@ const Home = () => {
                     <animated.img style={enterRight} className="profilePicture" src={profilePic} alt="Profile"/>
                 </div>
            </div>
+           <Footer />
         </AbsoluteWrapper>
     );
 };

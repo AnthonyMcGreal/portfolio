@@ -1,6 +1,7 @@
 import AbsoluteWrapper from './AbsoluteWrapper';
 import { useSpring, animated } from 'react-spring';
 import { useHistory } from 'react-router-dom';
+import Footer from './Footer';
 
 
 const ViewProject = ({project}) => {
@@ -38,6 +39,7 @@ const ViewProject = ({project}) => {
                 </animated.div>
             </animated.div>
         </div>
+        <Footer />
         </AbsoluteWrapper>
     );
 };

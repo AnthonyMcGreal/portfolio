@@ -2,6 +2,7 @@ import { useSpring, animated} from 'react-spring';
 import { useHistory } from 'react-router-dom';
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import { nc_news_fe, nc_news_be, waypoint, hangman } from '../projects';
+import Footer from './Footer';
 
 const Projects = ({project, setProject}) => {
 
@@ -84,6 +85,7 @@ const Projects = ({project, setProject}) => {
 
                 </div>
            </div>
+           <Footer />
         </AbsoluteWrapper>
        
     );

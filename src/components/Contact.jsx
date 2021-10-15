@@ -1,7 +1,8 @@
 import { useSpring, animated } from 'react-spring';
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import emailIcon from "../images/emailIcon.png";
-import linkedIn from "../images/linkedIn.png"
+import linkedIn from "../images/linkedIn.png";
+import Footer from './Footer';
 
 
 const Contact = () => {
@@ -61,7 +62,7 @@ const Contact = () => {
                     </animated.div>
             </animated.div>
             </div>
-
+            <Footer />
         </AbsoluteWrapper>
     );
 };
