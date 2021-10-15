@@ -2,7 +2,7 @@ import React from 'react';
 
 const AbsoluteWrapper = ({children}) => {
     return (
-        <div className="absoluteComponant">
+        <div className="absoluteComponent">
             {children}
         </div>
     );

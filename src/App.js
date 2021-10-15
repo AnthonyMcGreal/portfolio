@@ -1,14 +1,14 @@
 import './App.css';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
-import Header from './componants/Header';
-import Home from './componants/Home';
-import About from './componants/About';
-import Contact from './componants/Contact';
-import Projects from './componants/Projects';
-import Footer from './componants/Footer';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 import { useState } from 'react';
-import ViewProject from './componants/ViewProject';
+import ViewProject from './components/ViewProject';
 
 function App() {
   const location = useLocation();
@@ -20,7 +20,6 @@ function App() {
     leave: { opacity: 1, transform: 'translate(-100%, 0)' },
   });
 
-  console.log(project);
   return (
     <div className="pageContainer">
       <Header className="App-header"></Header>

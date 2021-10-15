@@ -1,5 +1,6 @@
 .pageContainer {
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Header-container {
@@ -26,6 +27,17 @@
   position: absolute;
   bottom: 0px;
   border-top: #fc4a1a 4px solid;
+}
+
+.logo {
+  position: absolute;
+  left: 30px;
+  top: 6%;
+  transform: translateY(-50%);
+  color: lightgray;
+  font-size: 50px;
+  padding: 6px;
+  border: #fc4a1a 3px solid;
 }
 
 .nav-links {
@@ -58,7 +70,7 @@
   width: 100%;
 }
 
-.absoluteComponant {
+.absoluteComponent {
   box-sizing: border-box;
   position: absolute;
   width: 100%;
@@ -167,6 +179,7 @@
 
 .projectBox {
   width: 300px;
+  min-width: 300px;
   height: 65%;
   background-color: rgb(92, 92, 92);
   border-radius: 20px;
@@ -187,19 +200,29 @@
   margin: auto;
   margin-bottom: 10%;
   border-bottom: #fc4a1a 3px solid;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .projectContent img {
-  width: 60%;
+  width: 160px;
   height: 250px;
 }
 
 .projectContent p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
-.projectPopUp {
-  z-index: 2;
+.projectButton {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  padding: 3px;
+  width: 100px;
+  color: black;
+  background-color: rgb(146, 146, 146);
+  border-color: #fc4a1a;
 }
 
 .contactMeContainer {
@@ -249,6 +272,61 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.viewProjectContentContainer {
+  height: 90%;
+  min-width: 550px;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(129, 129, 129);
+  border-radius: 20px;
+}
+
+.viewProjectContent {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.viewProjectContent h1 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.viewProjectContent img {
+  width: 170px;
+  height: 250px;
+}
+
+.viewProjectContent a {
+  display: block;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.viewProjectContent button {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  padding: 3px;
+  width: 150px;
+  color: black;
+  background-color: rgb(202, 202, 202);
+  border-color: #fc4a1a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a.viewProjectLink,
+a.viewProjectLink :visited,
+a.viewProjectLink :hover,
+a.viewProjectLink :active {
+  color: black;
 }
 
 .linkedInIcon {
@@ -297,8 +375,65 @@ a.linkedInLink :active {
   opacity: 0.5;
 }
 
-.modal {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-}
+@media only screen and (max-width: 769px) {
+  .pageContainer {
+    height: none;
+    width: 100vw;
+  }
+
+  .appContent {
+    position: relative;
+    top: 0px;
+    height: 600px;
+  }
+
+  .logo {
+    left: 10px;
+    font-size: 30px;
+  }
+
+  .nav-links {
+    min-width: 0px;
+    font-size: 10px;
+    width: 70%;
+  }
+
+  .link {
+    font-size: 10px;
+  }
+
+  .homeContainer {
+    height: 100%;
+  }
+
+  .homeContentContainer {
+    padding-top: 0px;
+    display: block;
+    overflow-y: scroll;
+    min-width: 0px;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .homeText h1 {
+    font-size: 60px;
+  }
+
+  .aboutContent {
+    width: 90%;
+    min-width: 0px;
+    overflow-y: scroll;
+  }
+
+  .profilePicture {
+    display: block;
+    width: 260px;
+    height: 260px;
+  }
+
+  .footer {
+    display: block;
+    position: relative;
+    width: 100vw;
+  }
+} ;

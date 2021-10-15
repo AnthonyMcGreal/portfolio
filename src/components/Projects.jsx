@@ -44,7 +44,7 @@ const Projects = ({project, setProject}) => {
         history.push('/viewProject')
 
     }
-    console.log(project)
+    
     return (
         <AbsoluteWrapper>
             <div className="projectsContainer">
@@ -54,7 +54,7 @@ const Projects = ({project, setProject}) => {
                    <h1>{nc_news_fe.title}</h1>
                    <img src={nc_news_fe.thumbnail} alt="nc news frontend homepage"/>
                    <p>{nc_news_fe.shortDescription}</p>
-                   <button onClick={() => handleClick(nc_news_fe)}>View Project</button>
+                   <button onClick={() => handleClick(nc_news_fe)} className="projectButton">View Project</button>
                    </div>
                </animated.div>
                <animated.div style={enterBottom} className="projectBox">
@@ -62,7 +62,7 @@ const Projects = ({project, setProject}) => {
                <h1>{nc_news_be.title}</h1>
                    <img src={nc_news_be.thumbnail} alt="nc news backend homepage"/>
                    <p>{nc_news_be.shortDescription}</p>
-                   <button onClick={() => handleClick(nc_news_be)}>View Project</button>
+                   <button onClick={() => handleClick(nc_news_be)} className="projectButton">View Project</button>
                </div>
                </animated.div>
                <animated.div style={enterBottom2} className="projectBox">
@@ -70,7 +70,7 @@ const Projects = ({project, setProject}) => {
                <h1>{waypoint.title}</h1>
                    <img src={waypoint.thumbnail} alt="waypoint homepage"/>
                    <p>{waypoint.shortDescription}</p>
-                   <button onClick={() => handleClick(waypoint)}>View Project</button>
+                   <button onClick={() => handleClick(waypoint)} className="projectButton">View Project</button>
                </div>
                </animated.div>
                <animated.div style={enterRight} className="projectBox">
@@ -78,7 +78,7 @@ const Projects = ({project, setProject}) => {
                <h1>{hangman.title}</h1>
                    <img src={hangman.thumbnail} alt="hangman homepage"/>
                    <p>{hangman.shortDescription}</p>
-                   <button onClick={() => handleClick(hangman)}>View Project</button>
+                   <button onClick={() => handleClick(hangman)} className="projectButton">View Project</button>
                </div>
                </animated.div>
 

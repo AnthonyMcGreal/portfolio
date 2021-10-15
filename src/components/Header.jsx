@@ -4,6 +4,7 @@ const Header = () => {
 
     return (
         <div className="Header-container">
+            <div className="logo">AM</div>
             <div className="nav-links">
             <NavLink exact to="/" className="link" activeClassName="activeLink">Home</NavLink>
             <NavLink exact to="/aboutMe" className="link" activeClassName="activeLink">About Me</NavLink>
