@@ -413,7 +413,8 @@ a.linkedInLink :active {
   }
 
   .homeContainer {
-    height: 88%;
+    height: fit-content;
+    padding-bottom: 20px;
   }
 
   .homeContentContainer {
