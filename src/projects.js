@@ -1,7 +1,7 @@
-import nc_news_feThumb from '../src/images/nc_news_feThumb.png';
-import nc_news_beThumb from '../src/images/nc_news_beThumb.png';
-import waypointThumb from '../src/images/waypointThumb.png';
-import hangmanThumb from '../src/images/hangmanThumb.png';
+import nc_news_feThumb from '../src/images/nc_news_feThumb.jpg';
+import nc_news_beThumb from '../src/images/nc_news_beThumb.jpg';
+import waypointThumb from '../src/images/waypointThumb.jpg';
+import hangmanThumb from '../src/images/hangmanThumb.jpg';
 
 const nc_news_fe = {
   title: 'NC News Frontend Project',
