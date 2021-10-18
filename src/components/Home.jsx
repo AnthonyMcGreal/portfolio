@@ -49,7 +49,7 @@ const Home = () => {
                    <animated.div style={enter2} id="animatedHeading">
                     <h1>I'm Ant.</h1> 
                     </animated.div>
-                    <animated.p style={enter3}><strong>I'm a junior developer looking for employment. Explore my website and get in touch if you like what you see.</strong></animated.p>
+                    <animated.p style={enter3}><strong>I'm a junior developer looking for new opportunities to diversify my coding experience.</strong></animated.p>
                     </div>
                     <animated.img style={enterRight} className="profilePicture" src={profilePic} alt="Profile"/>
                 </div>

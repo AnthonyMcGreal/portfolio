@@ -47,9 +47,9 @@ const About = () => {
                 <animated.div style={enter} className="aboutContent">
                     <animated.div style={fade}>
                     <h1>About Me</h1>
-                    <animated.p style={fade1}>Hello, my name is Anthony McGreal. Im a junior developer based in Bolton, Greater Manchester. After spending 15 years in the hospitality sector and seeing the vulnerability of workers in that industry exposed during the Covid lockdowns, I decided to turn my curiosity of coding into a fully fledged life goal. I was going to learn to code and pursue it as a profession.</animated.p>
-                    <animated.p style={fade2}>So at the start of 2021 I began my coding journey, learning in my spare time using free online resources. A few months later I signed up to the Full Stack Developer Bootcamp at Northcoders. 14 weeks and a completed bootcamp later and here I am building applications using a variety of tech. </animated.p>
-                    <animated.p style={fade3}>Moving forward I hope to hone the skills I have acquired and be considered an excellent developer amongst my peers. </animated.p>
+                    <animated.p style={fade1}>Hello, my name is Anthony McGreal. Im a junior developer based in Bolton, Greater Manchester. After spending 15 years in the hospitality sector, and seeing the vulnerability of workers in that industry exposed during the Covid lockdowns, I decided to turn my curiosity of coding into a fully fledged life goal. I was going to learn to code and pursue it as a profession.</animated.p>
+                    <animated.p style={fade2}>So, at the start of 2021 I began my coding journey, learning new skills in my spare time using free online resources. A few months later, I signed up to the Full Stack Developer Bootcamp at Northcoders. 14 weeks, and a completed bootcamp later, and here I am building applications using a variety of tech. </animated.p>
+                    <animated.p style={fade3}>Moving forward, I hope to further hone the skills I have acquired and be considered an excellent developer amongst my peers. </animated.p>
                     </animated.div>
             </animated.div>
             </div>

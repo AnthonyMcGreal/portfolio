@@ -162,7 +162,7 @@
 }
 
 .projectsContainer {
-  height: 100%;
+  height: 88%;
   width: 100%;
   background-color: grey;
   background-image: url('../src/images/projectsBG.jpg');
@@ -413,7 +413,7 @@ a.linkedInLink :active {
   }
 
   .homeContainer {
-    height: 600px;
+    height: 88%;
   }
 
   .homeContentContainer {
@@ -459,7 +459,6 @@ a.linkedInLink :active {
 
   .projectsContentContainer {
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
 
   .projectBox {
@@ -478,7 +477,7 @@ a.linkedInLink :active {
 
   .contactMeContainer {
     position: relative;
-    height: 500px;
+    height: 88%;
   }
 
   .contactMeContentBackGround {
