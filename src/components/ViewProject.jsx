@@ -32,8 +32,8 @@ const ViewProject = ({project}) => {
                     <p>{project.description}</p>
                     <p>Built using : {project.techStack}</p>
                     {project.hasOwnProperty("site")? <a href={`${project.site}`} target="_blank" rel="noreferrer" className="viewProjectLink">Hosted site</a>:null }
-                    <a href={`${project.github}`} className="viewProjectLink">Github repository</a>
-                    {project.hasOwnProperty("github2")? <a href={`${project.github2}`} target="_blank" rel="noreferrer" className="viewProjectLink">Github repository</a>:null }
+                    <a href={`${project.github}`} className="viewProjectLink" target="_blank" rel="noreferrer">{project.title==="Waypoint"? "Backend Github repository":"Github repository"}</a>
+                {project.hasOwnProperty("github2")? <a href={`${project.github2}`} target="_blank" rel="noreferrer" className="viewProjectLink">{project.title==="Waypoint"? "Frontend Github repository":"Github repository"}</a>:null }
                     {project.hasOwnProperty("video")? <a href={`${project.video}`} target="_blank" rel="noreferrer" className="viewProjectLink">Presentation video</a>:null }
                     <button onClick={() => history.push('/projects')}>Back to projects</button>
                 </animated.div>
