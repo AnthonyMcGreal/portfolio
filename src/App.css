@@ -455,7 +455,7 @@ a.linkedInLink :active {
   }
 
   .projectsContainer {
-    height: 800px;
+    height: fit-content;
   }
 
   .projectsContentContainer {
@@ -465,7 +465,7 @@ a.linkedInLink :active {
   .projectBox {
     width: 250px;
     min-width: 200px;
-    height: 180px;
+    height: fit-content;
   }
 
   .projectContent h1 {
@@ -473,7 +473,16 @@ a.linkedInLink :active {
   }
 
   .projectContent img {
-    display: none;
+    width: 100px;
+    height: 150px;
+  }
+
+  .projectButton {
+    position: relative;
+    left: auto;
+    transform: none;
+    bottom: auto;
+    margin-bottom: 5px;
   }
 
   .contactMeContainer {

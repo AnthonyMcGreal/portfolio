@@ -52,7 +52,7 @@ const Contact = () => {
                 <animated.div style={enter} className="contactMeContentBackGround">
                     <animated.div style={fadeDetails} className="contactMeContent">
                     <h1>Contact Me</h1>
-                    <p>If you would like to get in touch with me via the following methods:</p>
+                    <p>If you would like to get in touch, contact me via the following methods:</p>
                     <div className="details">
                         <animated.img style={fadeEmailIcon } className="email" src={emailIcon} alt="email" />
                         <animated.p style={fadeEmailAddress} className="emailAddress">anthonymcgreal@hotmail.co.uk</animated.p>
