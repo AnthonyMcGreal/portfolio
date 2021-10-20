@@ -11,7 +11,9 @@ import ViewProject from './components/ViewProject';
 
 function App() {
   const location = useLocation();
-  const [project, setProject] = useState({ test: 'hello' });
+  const [project, setProject] = useState(
+    JSON.parse(localStorage.projectObject) || {}
+  );
 
   const transitions = useTransition(location, {
     from: { opacity: 1, transform: 'translate(100%, 0)' },

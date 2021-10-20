@@ -42,6 +42,7 @@ const Projects = ({project, setProject}) => {
 
     const handleClick = (passedProject) => {
         setProject(passedProject)
+        localStorage.setItem('projectObject', JSON.stringify(passedProject));
         history.push('/viewProject')
 
     }
