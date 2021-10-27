@@ -34,7 +34,7 @@ const waypoint = {
   video: 'https://www.youtube.com/watch?v=rmPnrpoBBiA',
   thumbnail: waypointThumb,
   description:
-    'Waypoint was the final project that I and my team of fellow students created at Northcoders. Built from the ground up in 10 days, we wanted to build an app where users could record walks and create "Waypoints" along the way. Waypoints are static points along a route, where pictures and information can be used to bring a walk to life. These routes appear in a "social media" style feed on the homepage for friends and family to see. It was a great opportunity to use a bunch of tech we hadn\'t experienced on the new course before.',
+    'Waypoint was the final project that I and my team of fellow students created at Northcoders. Built from the ground up in 10 days, we wanted to build an app where users could record walks and create "Waypoints" along the way. Waypoints are static points along a route, where pictures and information can be used to bring a walk to life. These routes appear in a "social media" style feed on the homepage for friends and family to see. It was a great opportunity to use a bunch of tech we hadn\'t experienced on the course before.',
   techStack:
     'React native | Expo | MongoDB | Mongoose | AWS | Node.js | Express.js | Jest',
 };

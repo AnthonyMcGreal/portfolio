@@ -11,15 +11,21 @@ import ViewProject from './components/ViewProject';
 
 function App() {
   const location = useLocation();
-  const [project, setProject] = useState(
-    JSON.parse(localStorage.projectObject) || {}
-  );
+  const [project, setProject] = useState(() => {
+    if (localStorage.hasOwnProperty('projectObject')) {
+      return JSON.parse(localStorage.getItem('projectObject'));
+    } else {
+      return {};
+    }
+  });
 
   const transitions = useTransition(location, {
     from: { opacity: 1, transform: 'translate(100%, 0)' },
     enter: { opacity: 1, transform: 'translate(0%, 0)' },
     leave: { opacity: 1, transform: 'translate(-100%, 0)' },
   });
+
+  console.log(project);
 
   return (
     <div className="pageContainer">

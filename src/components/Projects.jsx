@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import AbsoluteWrapper from "./AbsoluteWrapper";
 import { nc_news_fe, nc_news_be, waypoint, hangman } from '../projects';
 import Footer from './Footer';
+import { useEffect } from 'react';
 
 const Projects = ({project, setProject}) => {
 
@@ -40,11 +41,13 @@ const Projects = ({project, setProject}) => {
 
     const history = useHistory()
 
+    useEffect(() => {
+        localStorage.setItem('projectObject', JSON.stringify(project));
+    },[project])
+    
     const handleClick = (passedProject) => {
         setProject(passedProject)
-        localStorage.setItem('projectObject', JSON.stringify(passedProject));
         history.push('/viewProject')
-
     }
     
     return (
